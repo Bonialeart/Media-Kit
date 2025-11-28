@@ -56,3 +56,12 @@ export interface ContentPillar {
   icon: React.ReactNode;
   color: string;
 }
+
+export interface Testimonial {
+  id: number;
+  user: string;
+  comment: string;
+  platform: 'youtube' | 'instagram' | 'tiktok';
+  color: string; // bg color for the note
+  rotation: string; // rotation class
+}

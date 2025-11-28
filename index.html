@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bonialeart Media Kit</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #f8f5f2;
-      }
-      
-      /* Artistic Styles */
-      .font-hand {
-        font-family: 'Patrick Hand', cursive;
-      }
 
-      .paper-texture {
-        background-color: #fdfbf7;
-        background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bonialeart Media Kit</title>
+  <link rel="icon" type="image/jpeg"
+    href="https://dl.dropboxusercontent.com/scl/fi/0526t9aznxnyggm1od1qw/Logocolor.jpg?rlkey=fr11c0m6eps3ll1rb839msxji&st=ewqvingz" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Patrick+Hand&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ccc8c2;
+    }
 
-      .tape {
-        background-color: rgba(255, 255, 255, 0.4);
-        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        border: 1px solid rgba(255,255,255,0.2);
-        backdrop-filter: blur(1px);
-        transform: rotate(-1deg);
-      }
+    /* Artistic Styles */
+    .font-hand {
+      font-family: 'Patrick Hand', cursive;
+    }
 
-      .polaroid {
-        background: white;
-        padding: 12px 12px 45px 12px;
-        box-shadow: 2px 4px 12px rgba(0,0,0,0.15);
-        transition: all 0.3s ease;
-      }
-      .polaroid:hover {
-        transform: scale(1.02) rotate(0deg) !important;
-        box-shadow: 4px 8px 16px rgba(0,0,0,0.2);
-        z-index: 10;
-      }
+    .paper-texture {
+      background-color: #d9d5ce;
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+    }
 
-      /* Custom scrollbar for clean look */
-      ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #d6d3d1;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #a8a29e;
-      }
-    </style>
+    .tape {
+      background-color: rgba(255, 255, 255, 0.4);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(1px);
+      transform: rotate(-1deg);
+    }
+
+    .polaroid {
+      background: white;
+      padding: 12px 12px 45px 12px;
+      box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .polaroid:hover {
+      transform: scale(1.02) rotate(0deg) !important;
+      box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+
+    /* Custom scrollbar for clean look */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #d6d3d1;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #a8a29e;
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -69,10 +77,12 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body>
-    <div id="root"></div>
+
+<body>
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>

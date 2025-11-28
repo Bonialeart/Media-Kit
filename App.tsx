@@ -8,6 +8,7 @@ import { Mail, Instagram, ArrowRight, Youtube } from 'lucide-react';
 // Lazy load heavy components for better performance
 const AudienceCharts = lazy(() => import('./components/AudienceCharts').then(module => ({ default: module.AudienceCharts })));
 const PostGallery = lazy(() => import('./components/PostGallery').then(module => ({ default: module.PostGallery })));
+const CommunityLove = lazy(() => import('./components/CommunityLove').then(module => ({ default: module.CommunityLove })));
 
 const App: React.FC = () => {
     const [copied, setCopied] = useState(false);
@@ -213,6 +214,13 @@ const App: React.FC = () => {
                             </div>
                         }>
                             <PostGallery />
+                        </Suspense>
+                    </section>
+
+                    {/* Community Love / Testimonials */}
+                    <section>
+                        <Suspense fallback={<div className="h-64 bg-gray-100 animate-pulse rounded-sm"></div>}>
+                            <CommunityLove />
                         </Suspense>
                     </section>
 

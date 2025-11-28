@@ -1,5 +1,5 @@
 
-import { Demographics, Post, Profile, Stat, Service, ContentPillar } from './types';
+import { Demographics, Post, Profile, Stat, Service, ContentPillar, Testimonial } from './types';
 import React from 'react';
 import { Palette, Smartphone, Video, Zap, PenTool, MonitorPlay, Search, Trophy } from 'lucide-react';
 
@@ -157,5 +157,40 @@ export const TOP_POSTS: Post[] = [
     caption: "La mejor página para conseguir inspiración de Arte Digital y concept art | IAMAG",
     url: "https://www.dropbox.com/scl/fi/ue08rbqcfm0rg81ks64lt/IAMAG.mp4?rlkey=c001i8ratt9xdq5ufardsu72v&st=admjzjwn&raw=1",
     tiktokUrl: "https://www.tiktok.com/@bonialeart/video/7517418556884274438?lang=en"
+  }
+];
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: 1,
+    user: "@art_lover99",
+    comment: "I bought my first tablet because of your review! Thanks for being so honest.",
+    platform: "youtube",
+    color: "bg-yellow-100",
+    rotation: "-rotate-2"
+  },
+  {
+    id: 2,
+    user: "@creative_mind",
+    comment: "Your tutorials on CSP are literally saving my degree right now. 😭❤️",
+    platform: "tiktok",
+    color: "bg-pink-100",
+    rotation: "rotate-1"
+  },
+  {
+    id: 3,
+    user: "@digital_dreamer",
+    comment: "Finally someone who explains color theory simply! Subscribed immediately.",
+    platform: "instagram",
+    color: "bg-blue-100",
+    rotation: "-rotate-3"
+  },
+  {
+    id: 4,
+    user: "@sketchy_guy",
+    comment: "Love the vibe of your videos. Keep it up!",
+    platform: "youtube",
+    color: "bg-green-100",
+    rotation: "rotate-2"
   }
 ];
